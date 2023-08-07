@@ -1,0 +1,5 @@
+# os
+# glob
+
+pandas=2.0
+flask
