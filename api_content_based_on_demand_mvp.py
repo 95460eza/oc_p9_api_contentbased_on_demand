@@ -98,7 +98,7 @@ def predict_top_items():
     melted_df = df_item_similarity_scores.melt(var_name="article_id", value_name="similarity_score")
     top_n_values = melted_df.nlargest(top_values_to_keep, "similarity_score")
     top_n_values.index = range(1, top_values_to_keep+1)
-    print(top_n_values.shape)
+    #print(top_n_values.shape)
 
     json_string = top_n_values.to_json()
 
