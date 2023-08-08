@@ -1,5 +1,7 @@
 # os
 # glob
+# pickle
 
 pandas=2.0
+scikit-learn=1.3
 flask
