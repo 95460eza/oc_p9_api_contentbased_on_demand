@@ -13,7 +13,7 @@ app_flask = flask.Flask(__name__)
 app_flask.config["DEBUG"] = True
 
 # Create URL of Main Page:  http://127.0.0.1:5000 IF locally
-@app_flask.route("/index", methods=["GET"])
+@app_flask.route("/", methods=["GET"])
 def home():
     return "<h1>FLASK CONTENT-BASED PREDICTION API</h1><p>ENDPOINT for Predictions is under the /predict url route.</p>"
 
